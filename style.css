@@ -63,13 +63,25 @@ img{
   font-weight: bold;
   border: none;
   color: #FFFFFF;
+  transition: box-shadow 0.5s linear;
+  cursor: pointer;
+}
+
+
+.btn:hover{
+  box-shadow: 0 0 15px var(--btn-color);
 }
 
 .h-spbetween-v-center{
   justify-content: space-between;
   align-items: center;
 }
-
+a{
+  transition: color 0.5s linear;
+}
+a:hover{
+  color: var(--btn-color);
+}
 
 /* individual design */
 /* hero area design */
@@ -269,6 +281,10 @@ align-items: center;
   color: rgba(224, 44, 109, 0.87);
   font-size: 1.6rem;
   font-weight: bold;
+}
+
+.more_cards a:hover{
+  color: var(--blue-dark);
 }
 
 
