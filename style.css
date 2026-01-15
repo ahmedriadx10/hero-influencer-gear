@@ -173,7 +173,13 @@ width: 90%;
 
 /* sponsors area */ 
 
+.sponsors_area{
+  padding: 40px 0;
+}
  .sponsors_main{
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0 ;
   gap: 60px;
   flex-wrap: wrap;
   justify-content: center;
@@ -186,14 +192,76 @@ width: 90%;
 
 
 
+/* collection area */
 
+.popular_collections{
+  padding: 100px 0 70px;
+}
+.collection_title{
+  max-width: 400px;
+  width: 100%;
+  padding: 30px 0;
+  text-align: center;
+  
+}
+.collection_title h4{
+font-size: 2.8rem;
+font-weight: 600;
+color: var(--dark1);
+}
+.collection_main_container{
+  max-width: 1040px;
+grid-template-columns: repeat(3,1fr);
+gap: 30px;
+}
+
+.collection_card{
+  padding: 17px 14px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+border-radius: 6px;
+
+}
+
+.collection_card img{
+  width: 100%;
+}
+
+.collection_card h6{
+ color: var(--dark1);
+ font-size: 2.8rem;
+ font-weight: 600;
+margin: 15px 0;
+}
+
+
+.collection_card p{
+  font-size: 2.2rem;
+  color:rgba(0, 0, 0, 0.87) ;
+margin-bottom: 8px;
+}
+
+.collection_card span{
+  display: block;
+  color: var(--gray);
+  margin-bottom: 8px;
+}
+
+.collection_rating_area{
+color: orangered;
+gap: 7px;
+align-items: center;
+}
+
+.collection_rating_area p{
+  font-size: 1.2rem;
+}
 
 
 
 @media screen and (max-width:576px){
 
   .container{
-    width: 97%;
+    width: 96%;
 
   }
 
@@ -233,12 +301,18 @@ width: 90%;
 
   
 .sponsors_main{
-  gap: 40px;
+  gap: 35px;
 }
 
 
+.collection_main_container{
+  grid-template-columns: 1fr;
+  padding: 10px;
+}
 
-
+/* .collection_card{
+  width: 100%;
+} */
 
 }
 
