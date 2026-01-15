@@ -171,6 +171,22 @@ width: 90%;
 
 
 
+/* sponsors area */ 
+
+ .sponsors_main{
+  gap: 60px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sponsors_main img{
+  max-width: 100px;
+}
+
+
+
+
+
 
 
 
@@ -216,6 +232,14 @@ width: 90%;
   }
 
   
+.sponsors_main{
+  gap: 40px;
+}
+
+
+
+
+
 }
 
 
