@@ -14,6 +14,11 @@ box-sizing: border-box;
 }
 
 
+/*  global scope design*/
+
+html{
+  font-size: 10px;
+}
 body{
    font-family: "Poppins", sans-serif;
 }
@@ -24,9 +29,9 @@ img{
 }
 
 
-
+/* shared design */
 .container{
-  max-width: 1200px;
+  max-width: 1150px;
   margin: 0 auto;
 }
 
@@ -38,10 +43,180 @@ img{
   display:flex;
 }
 
-.d-column{
+.f-column{
   flex-direction: column;
 }
 
 .d-grid{
   display: grid;
 }
+
+.p-text{
+  color: var(--dark2);
+  font-size: 1.6rem;
+}
+
+.btn{
+  background-color: var(--btn-color);
+  padding: 12px 24px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border: none;
+  color: #FFFFFF;
+}
+
+.h-spbetween-v-center{
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* individual design */
+/* hero area design */
+
+.hero_area{
+  padding: 90px 0;
+}
+
+
+
+
+
+.hero_nav h1{
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: var(--dark2);
+}
+
+
+
+.hero_nav_list{
+  gap: 34px;
+
+}
+
+.hero_nav_list li{
+  list-style: none;
+  align-items: center;
+}
+
+li a{
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: var(--dark2);
+}
+
+#search-icon{
+  font-size: 20px;
+  
+}
+
+
+#cart-icon{
+  font-size: 36px;
+}
+
+
+
+
+.hero_area_content{
+padding: 50px 0;
+
+}
+
+.hero_area_content_info{
+  max-width: 500px;
+  width: 100%;
+  gap: 25px;
+
+}
+
+
+
+
+.hero_area_content_info h2{
+  font-size: 5.2rem;
+font-weight: bold;
+color: var(--dark2);
+}
+
+.hero_btn_area button{
+border-radius: 41px;
+display: flex;
+gap:10px;
+align-items:center;
+}
+
+
+
+
+
+
+
+.hero_area_img{
+  max-width: 600px;
+  padding: 20px;
+width: 90%;
+  background-image: url(./images/Circle\ design.svg);
+  background-position: center;
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+
+.hero_area_img img{
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+@media screen and (max-width:576px){
+
+  .container{
+    width: 97%;
+
+  }
+
+
+  .hero_area_content,.hero_nav{
+    flex-direction: column;
+  }
+
+
+  .hero_area_content{
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+
+  .hero_area_content_info{
+    padding: 20px;
+  }
+
+  .hero_area_content_info h2{
+    font-size: 3rem;
+    font-weight: 600;
+  }
+
+  .hero_area_content_info p{
+    font-size: 1.4rem;
+  }
+
+  .hero_btn_area button{
+  margin: 0 auto;
+  }
+
+
+  .hero_nav .hero_nav_list{
+    display: none;
+  }
+
+  
+}
+
+
+
